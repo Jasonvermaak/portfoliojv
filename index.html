@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<!--  
+	LEFT TO DO:
+		- Form validation
+	 -->
+	<meta charset="utf-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Jason Vermaak</title>
+
+	<!-- FavIcon -->
+	<link rel="apple-touch-icon" sizes="57x57" href="css/images/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="css/images/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="css/images/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="css/images/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="css/images/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="css/images/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="css/images/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="css/images/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="css/images/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="css/images/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="css/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="css/images/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="css/images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="css/images/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- jQuery -->
+	<script src="vendor/jquery-3.1.1.min.js"></script>
+	<script src="vendor/jquery-ui.min.js"></script>
+	
+
+	<!-- For Animation -->
+	<script type="text/javascript" src="vendor/animatescroll.min.js"></script>
+
+	<!-- App Styles -->
+	<link rel="stylesheet" href="css/style.css" />
+	
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+	<!--/. Font Awesome v5 2018 -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+</head>
+<body>
+	<header class="header">
+		<a href="#" class="logo header-logo">
+			<img src="css/images/sprite/logo.png" alt="Jason Vermaak">
+		</a>
+
+		<a href="#" class="menu-trigger nav-trigger">
+			<i class="menu-trigger-bar top"></i>
+
+			<i class="menu-trigger-bar middle"></i>
+
+			<i class="menu-trigger-bar bottom"></i>
+		</a>
+
+		<div class="header-content">
+			<a href="#" class="close-trigger">
+				<i class="close-trigger-bar left"></i>
+
+				<i class="close-trigger-bar right"></i>
+			</a>
+
+			<div class="nav">
+				<ul>
+					<li>
+						<a href="#projects" class="link" id="btnProjects">Projects</a>
+					</li>
+					<li>
+						<a href="#Education" class="link" id="btnEducation">Education</a>
+						</li>
+						<li>
+							<a href="#Hobbies" class="link" id="btnHobbies">Hobbies</a>
+							</li>
+
+					<li>
+						<a href="#" class="link" onclick="openModal()">Contact</a>
+					</li>
+				</ul>
+			</div><!-- /.nav -->
+		</div><!-- /.header-content -->
+	</header><!-- /.header -->
+
+	<div class="cover">
+		<div class="cover-video">
+			<video autoplay="" loop="" muted="">
+				<source src="css/video/videomp4.mp4" type="video/mp4">
+
+				<source src="css/video/videowebm.webm" type="video/webm">
+				<!-- <source src="css/video/ogv-2.ogv" type="video/ogg"> -->
+			</video>
+		</div><!-- /.cover-video -->
+
+		<div class="cover-container">
+			<div class="container">
+				<div class="cover-inner">
+					<div class="cover-content">
+						<h1 class="cover-title">Jason Vermaak</h1><!-- /.cover-title -->
+
+						<div class="cover-entry">
+							<p>Interactive Front-end Developer</p>
+						</div><!-- /.cover-entry -->
+
+						<div class="cover-actions" onclick="openModal();">
+							<a href="#" class="btn">
+								<span class="btn-text">About Me</span>
+
+								<div class="btn-mask"></div>
+
+								<span class="btn-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.213 476.213"><path d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607"></path>
+									</svg>
+								</span>
+							</a>
+						</div><!-- /.cover-actions -->
+					</div><!-- /.cover-content -->
+
+					<a href="#" class="hero-go-next no-smoothstate">
+						<div class="go-next-label">Works</div>
+
+						<span class="the-arrow arrow-down"></span>
+					</a>
+				</div><!-- /.cover-inner -->
+			</div><!-- /.container -->
+		</div><!-- /.cover-container -->
+	</div><!-- /.cover -->
+	
+	
+	<div class="section-heading">
+		<p class="heading">CASE STUDIES</p><!-- /.heading -->
+
+		<p class="subheading">Latest Work</p><!-- /.subheading -->
+	</div><!-- /.section-heading -->
+	
+	<div class="animation-wrapper">
+		<ul class="case-studies-list section" data-anchor="projectsPage" id="projects">
+			<li>
+				<a href="#" target="_blank" id="lato" style="background-image: url('css/images/temp/school.jpg');" class="case-study">
+				   <div class="case-study-mask"></div>
+
+				   <div class="case-study-reveal-mask"></div>
+
+				   <div class="case-study-mask-number">
+				      <div class="case-study-mask-back">01</div>
+
+				      <div class="case-study-mask-front">
+				         <div class="case-study-mask-overlay" data-index='01'>01</div>
+				      </div>
+				   </div>
+				   <div class="case-study-text-section">
+				      <h3 class="h2 case-study-title">TrillogyHub</h3>
+
+				      <h5 class="case-study-subtitle">Companion website for beginner to expert coders</h5>
+
+				      <button class="btn">
+								<span class="btn-text">View More</span>
+
+								<div class="btn-mask"></div>
+
+								<span class="btn-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.213 476.213">
+										<path d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607"></path>
+									</svg>
+								</span>
+							</button>
+						</div>
+					</a>
+				</li>
+				
+				<li>
+				<a href="#" target="_blank" style="background-image: url('css/images/temp/football.jpg');" class="case-study">
+					<div class="case-study-mask"></div>
+
+					<div class="case-study-reveal-mask"></div>
+
+					<div class="case-study-mask-number">
+					  <div class="case-study-mask-back">02</div>
+
+					  <div class="case-study-mask-front">
+					     <div data-index="02" class="case-study-mask-overlay">02</div>
+					  </div>
+					</div>
+
+					<div class="case-study-text-section">
+					  <h3 class="h2 case-study-title">GRIDIRON KINGS</h3>
+
+					  <h5 class="case-study-subtitle">Fantasy Football Helper</h5>
+
+					  <button class="btn">
+							<span class="btn-text">View More</span>
+
+							<div class="btn-mask"></div>
+
+							<span class="btn-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.213 476.213">
+									<path d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607"></path>
+								</svg>
+							</span>
+						</button>
+					</div>
+				</a>
+			</li>
+			
+			<li>
+				<a href="#" target="_blank" id="la-francesca" style="background-image: url('css/images/temp/basketball.jpg');" class="case-study">
+				   <div class="case-study-mask"></div>
+
+				   <div class="case-study-reveal-mask"></div>
+
+				   <div class="case-study-mask-number">
+				      <div class="case-study-mask-back">03</div>
+				      
+				      <div class="case-study-mask-front">
+				         <div class="case-study-mask-overlay" data-index='03'>03</div>
+				      </div>
+				   </div>
+
+				   <div class="case-study-text-section">
+				      <h3 class="h2 case-study-title">NBA MVP Race</h3>
+
+				      <h5 class="case-study-subtitle">React Memory Game</h5>
+
+				      <button class="btn">
+					<span class="btn-text">View More</span>
+
+					<div class="btn-mask"></div>
+							<span class="btn-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.213 476.213">
+									<path d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607"></path>
+								</svg>
+							</span>
+						</button>
+					</div>
+				</a>
+		   </li>
+		   <li>
+				<a href="#" target="_blank" id="lato" style="background-image: url('css/images/temp/porsche.jpg');" class="case-study">
+				   <div class="case-study-mask"></div>
+
+				   <div class="case-study-reveal-mask"></div>
+
+				   <div class="case-study-mask-number">
+				      <div class="case-study-mask-back">04</div>
+
+				      <div class="case-study-mask-front">
+				         <div class="case-study-mask-overlay" data-index='04'>04</div>
+				      </div>
+				   </div>
+				   <div class="case-study-text-section">
+				      <h3 class="h2 case-study-title">Car Hangman</h3>
+
+				      <h5 class="case-study-subtitle">Javascript Memory Game </h5>
+
+				      <button class="btn">
+								<span class="btn-text">View More</span>
+
+								<div class="btn-mask"></div>
+
+								<span class="btn-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.213 476.213">
+										<path d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607"></path>
+									</svg>
+								</span>
+							</button>
+						</div>
+					</a>
+				</li>
+		</ul>
+	</div><!-- /.animation-wrapper -->
+
+	<div class="section-heading">
+			<p class="heading">Education</p><!-- /.heading -->
+	
+			<p class="subheading">University of Central Florida</p><!-- /.subheading -->
+		</div><!-- /.section-heading -->
+
+	<div id="education">
+		
+        <div class="education-block">
+            <h3>University of Central Florida</h3>
+            <span class="education-date">September 2014 - May 2018</span>
+            <h4>Associates of Marketing In Business </h4>
+            <ul>
+            <li>
+                Senior in the Business College at UCF, accepted into the Proffesional Selling Program.  
+            </li>
+            <li>
+                I realized I was looking for something more for my future than sales and found the Web Developement program and fell in love with it.
+            </li>
+        </ul>
+        </div>
+        <!-- End .education-block -->
+
+        <div class="education-block">
+            <h3>University of Central Florida</h3>
+            <span class="education-date">August 14, 2018 - February 16, 2019</span>
+            <h4>Graduate Certificate: Full Stack Web Development</h4>
+            <ul>
+                <li>
+                    Learning Full Stack Web Developement but finding my passion in Front-end, UI/UX design. 
+                </li>
+                <li>
+                    Problem solving, Idea Creation and plan stucture are my strongest points. 
+                </li>
+               
+            </ul>
+        </div>
+		<!-- End .education-block -->
+    </div>
+	<!-- End #education -->
+
+	<div class="section-heading">
+			<p class="heading">What I like to do outside of work</p><!-- /.heading -->
+	
+			<p class="subheading">Hobbies</p><!-- /.subheading -->
+		</div><!-- /.section-heading -->
+
+
+	<div id="Hobbies" class="background-alt">
+            <h2 class="heading">Hobbies</h2>
+        
+            <div class="project shadow-large">
+                    <div class="project-image">
+                        <img class="hobbies-img" src="css/images/temp/motorbike-407186_640.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+						<h2>Hobbies</h2>
+						<br>
+                        <h3>Exploring, Learning and Creating.</h3>
+                        <ul>
+                        <li>
+                        Traveling is a huge part of my life. After graduating in 2012 I backpacked Europe for a full month with 3 friends who lived in England. 
+                        Eating great new foods, seeing new cultures and living inside Museums and old landmarks was the greatest thing I've ever done.
+                        </li>
+                        <li>
+                        If you start talking to me about American Football (NFL) or Basketball (NBA) I can talk to you all day. I was born in South Africa so I follow The SpringBucks Rugby team aswell.
+                        </li>
+                    
+                        <li>
+                        Photography and Music are something I can't live without. Depending my mood I can be listening to 90's rock to new-age rap music. When im coding though a subtle indie band or light Edm is my go to. 
+                        </li>
+                        </ul>
+                    </div>
+                    <!-- End .hobbies-info -->
+                </div>
+            <!-- End .optional-section-block -->
+        
+        </div>
+		<!-- End .optional-section -->
+		
+	<div class="clearfix"></div><!-- /.clearfix -->
+	
+	<footer class="footer">
+		<div class="footer-content">
+			<ul>
+					<a href="https://github.com/" target="https://github.com/Jasonvermaak"><i class="fab fa-github" aria-hidden="true"></i></a>
+
+					<a href="https://linkedin.com/" target="https://www.linkedin.com/in/jason-vermaak-7698a3b5"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+
+					<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+
+					<a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+				
+					<a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+
+			</ul>
+			<p class="footer-copy">
+				&copy; 2018 Jason Vermaak - <a href="#" onclick="openModal()"> Contact</a>
+			</p><!-- /.footer-copy -->
+		</div><!-- /.footer-content -->
+	</footer><!-- /.footer -->
+
+	<div class="modal modal-aboutme" id="aboutme">
+		<div class="modal-backdrop"></div>
+
+		<div class="modal-inner">
+			<div class="bg--white" id="bgWhite">
+				<h6 class="color-black">about me</h6>
+
+				<div class="background-text">
+					Jason
+				</div><!-- /.background-text -->
+
+				<p class="sub-heading">Interactive Front-end developer</p><!-- /.sub-heading -->
+
+				<p>
+					Talented, enthusiastic and technically strong individual with over a year front-end web development and technical experience. I have real passion for coding,
+					 technology and software and possess proven ability of balancing multiple work streams within a fast paced, demanding environment. With excellent HTML, CSS (SASS)
+					  and JavaScript development skills, currently I’m seeking entry level Junior Front End Developer position with a vibrant company that will allow me to be part of a 
+					  highly collaborative team, develop my technical skills and work on projects for challenging client requirements. For more information on my work, pre-existing skills
+					   and background experience please review my <a href="https://github.com/jasonvermaak" class="underlined">Github</a> profile.
+					<a href="#" class="underlined" download>Here</a> is my downloadable resume.
+				</p>
+
+				<ul>
+					<li><span>Html</span></li>
+
+					<li><span>Css</span></li>
+
+					<li><span>JavaScript</span></li>
+
+					<li><span>React</span></li>
+
+					<li><span>Word Press</span></li>
+
+					<li><span>Sass</span></li>
+
+					<li><span>Bootstrap</span></li>
+
+					<li><span>PHP</span></li>
+
+					<li><span>JQuery</span></li>
+
+					<li><span>Node.js</span></li>
+
+					<li><span>Squelize</span></li>
+
+					<li><span>AJax</span></li>
+
+					<li><span>Git</span></li>
+
+					<li><span>Npm</span></li>
+
+					<li><span>Github</span></li>
+				</ul>
+
+				<div class="parameters">
+					<p>SP: <span id="parameters">0.000000000</span></p>
+				</div><!-- /#parameters.parameters -->
+			</div><!-- /.bg-white-->
+
+			<div class="bg--dark" id="bgDark">
+				<div class="background-text">
+					Contact
+				</div><!-- /.background-text -->
+
+				<h6 class="color--white">Getting in Touch</h6>
+
+				<p class="sub-heading color--white">New projects, freelance inquiry's or even a coffee.</p><!-- /.sub-heading -->
+				
+				<form method="POST" action="https://formspree.io/jasonvermaak@gmil.com">
+					<div class="form-body">
+						<label for="name">Name *</label>
+
+						<input type="text" name="name">
+
+						<label for="email">E-mail *</label>
+
+						<input type="email" name="email">
+						
+						<label for="message">Message *</label>
+
+						<textarea name="message" rows="5" name="message"></textarea>
+					</div>
+
+					<button type="submit" class="btn">
+						<span class="btn-text">Send Message</span>
+
+						<div class="btn-mask"></div>
+
+						<span class="btn-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.213 476.213">
+								<path d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607"></path>
+							</svg>
+						</span>
+					</button>
+				</form>
+
+				<div class="modal-close" onclick="closeModal()">
+					<span id="close-one"></span>
+					
+					<span id="close-two"></span>
+				</div><!-- /.modal-close -->
+			</div><!-- /.bg-/-dark -->
+		</div><!-- /.modal-inner -->
+	</div><!-- /#aboutme.modal modal-aboutme --> 
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+
+	<script src="vendor/animation.min.js"></script>
+	<script src="vendor/jquery.vide.min.js"></script>
+	<script src="js/functions.js"></script>
+</body>
+</html>
